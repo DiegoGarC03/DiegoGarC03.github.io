@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Justo Sierra</title>
+    <link rel="shortcut icon" href="img/logo-escuela.jpg" type="image/x-icon">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav-prioridad">
+        <nav class="navegacion-principal contenedor">
+            <a href="/index.html"><img class="imagen__home" src="img/logo-escuela.jpg" alt="logo home "></a>
+            <a href="/index.html">Inicio</a>
+            <a href="/nosotros.html">¿Quiénes somos?</a>
+            <a href="/funcionamiento.html">¿Cómo funciona la página?</a>
+            <a href="/login.html">Inicia sesión</a>
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="titulo">Escuela Secundaria Justo Sierra 
+        <span>Educación de calidad superior.</span></h1>
+    </header>
+
+    <section>
+        <form class="formulario">
+            <fieldset>
+                <legend>Para poder llevar a cabo tu registro, llena todos los datos.</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre(s):*</label>
+                        <input class="input-text" type="text" required placeholder="Nombre(s)">
+                    </div>
+
+                    <div class="campo">
+                        <label>Apellido Paterno:*</label>
+                        <input class="input-text" type="text" required placeholder="Apellido Paterno">
+                    </div>
+
+                    <div class="campo">
+                        <label>Apellido Materno:*</label>
+                        <input class="input-text" type="text" required placeholder="Apellido Materno">
+                    </div>
+
+                    <div class="campo">
+                        <label>CURP:*</label>
+                        <input class="input-text" type="text" required minlength="18" maxlength="18" placeholder="CURP">
+                    </div>
+
+                    <div class="campo">
+                        <label>Edad:*</label>
+                        <input class="input-text" type="number" required min="1" placeholder="Edad">
+                    </div>
+
+                    <div class="campo">
+                        <label>Usuario:*</label>
+                        <input class="input-text" type="text" required placeholder="Nombre de usuario">
+                    </div>
+
+                    <div class="campo">
+                        <label>Contraseña:*</label>
+                        <input class="input-text" type="password"  required placeholder="Ingresa una contraseña">
+                        <p>Recuerda hacer tu contraseña lo más segura posible.</p>
+                    </div>
+
+                    <div class="campo">
+                        <label>Confirma tu contraseña:*</label>
+                        <input class="input-text" type="password" required placeholder="Ingresa de nuevo tu contraseña">
+                    </div>
+
+                    <div class="correo">
+                        <label>Correo:*</label>
+                        <input class="input-text" type="email" required placeholder="Tu correo electrónico">
+                    </div>
+
+                    <div class="correo">
+                        <label>Confirma tu correo:*</label>
+                        <input class="input-text" type="email" required placeholder="Confirma tu correo electrónico">
+                    </div>
+
+                    <div class="pregunta">
+                        <label>Pregunta de seguridad:</label>
+                        <select name="select">
+                            <option value="0" disabled selected >Elige una pregunta de seguridad:</option>
+                            <option value="1">¿Cuál es el nombre de tu primer mascota?</option>
+                            <option value="2">¿Cuál es tu comida favorita?</option>
+                            <option value="3">¿Cuál es el nombre de tu mejor amigo de la infancia?</option>
+                            <option value="4">¿Cuál es tu ciudad de origen?</option>
+                            <option value="5">¿Cuál es el nombre de tu padre?</option>
+                            <option value="6">¿Cómo se llama la primaria donde estudiaste?</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label>Respuesta a la pregunta de seguridad:*</label>
+                        <input class="input-text" type="text" required placeholder="Registre su respuesta">
+                    </div>
+
+                    <div class="correo">
+                        <h1>
+                            AQUI VA EL CAPTCHA
+                        </h1>
+                        <h3>
+                            *Los campos marcados con un asterisco son obligatorios para el registro.
+                        </h3>
+                    </div>
+                </div> <!-- .contenedor-campos-->
+
+                <div class="alinear-derecha flex">
+                    <a class="boton" href="#">Iniciar sesión</a>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados Easy Software. 2022 ©</p>
+    </footer>
+
+</body>
+</html>

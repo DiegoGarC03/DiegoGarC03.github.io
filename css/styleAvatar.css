@@ -1,0 +1,100 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #EE9E1E;
+    --secundario: #E62E2D;
+    --gris: #757575;
+}
+
+@media (min-width: 768px) {
+    .avatares{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap:2rem;
+    }
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar h2{
+    color: var(--secundario);
+    font-size: 2.5rem
+}
+.avatar h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.avatar p{
+    line-height: 2;
+    text-align: center;
+}
+
+.avatar img{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Asesores sin grupos disponibles*/
+
+.avatarN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatarN h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.avatarN h2{
+    color: var(--secundario);
+    font-size: 2.5rem
+}
+
+.avatarN p{
+    line-height: 2;
+    text-align: center;
+}
+
+.avatarN img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: grayscale(90%);
+}
+
+.boton0{
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton0{
+        width: auto;
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
