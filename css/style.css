@@ -149,6 +149,13 @@ p{
     justify-content: flex-end;
 }
 
+/*Mapa*/
+@media (max-width: 767px) {
+    iframe{
+        width: 100%;
+    }
+}
+
 /*Navegación prioridad*/
 @media (min-width: 480px) {
     .nav-prioridad{
