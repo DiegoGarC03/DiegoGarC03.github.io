@@ -151,7 +151,7 @@ p{
 
 /*Mapa*/
 @media (max-width: 767px) {
-    iframe{
+    .mision iframe{
         width: 100%;
     }
 }
