@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Escuela Justo Sierra</title>
     <link rel="shortcut icon" href="img/logo-escuela.jpg" type="image/x-icon">
     <link rel="preload" href="css/normalize.css" as="style">
@@ -104,9 +105,8 @@
                     </div>
 
                     <div class="correo">
-                        <h1>
-                            AQUI VA EL CAPTCHA
-                        </h1>
+                        <div class="g-recaptcha" data-sitekey="6LdSZF8jAAAAAFUAN-hPHfETwbncqyRUgvO5TnGp"></div>
+                        <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>
                         <h3>
                             *Los campos marcados con un asterisco son obligatorios para el registro.
                         </h3>

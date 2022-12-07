@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Escuela Justo Sierra</title>
     <link rel="shortcut icon" href="img/logo-escuela.jpg" type="image/x-icon">
     <link rel="preload" href="css/normalize.css" as="style">
@@ -41,9 +42,8 @@
                         <label>Ingresa tu contraseña:</label>
                         <input class="input-text" type="password" required placeholder="Contraseña">
                     </div>
-                    <h1 class="pregunta">
-                        Aquí va el CAPTCHA
-                    </h1>
+                    <div class="g-recaptcha" data-sitekey="6LdSZF8jAAAAAFUAN-hPHfETwbncqyRUgvO5TnGp"></div>
+                    <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>
                     <div class="alinear-derecha flex">
                         <a class="boton" href="/home.html">Iniciar sesión</a>
                     </div>
