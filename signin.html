@@ -31,43 +31,43 @@
     </header>
 
     <section>
-        <form class="formulario">
+        <form action="contact.php" method="POST" class="formulario">
             <fieldset>
                 <legend>Para poder llevar a cabo tu registro, llena todos los datos.</legend>
                 <div class="contenedor-campos">
                     <div class="campo">
-                        <label>Nombre(s):*</label>
-                        <input class="input-text" type="text" required placeholder="Nombre(s)">
+                        <label for="Nombre">Nombre(s):*</label>
+                        <input class="input-text" type="text" required placeholder="Nombre(s)" id="txtNombre">
                     </div>
 
                     <div class="campo">
-                        <label>Apellido Paterno:*</label>
-                        <input class="input-text" type="text" required placeholder="Apellido Paterno">
+                        <label for="Paterno">Apellido Paterno:*</label>
+                        <input class="input-text" type="text" required placeholder="Apellido Paterno" id="txtPaterno">
                     </div>
 
                     <div class="campo">
-                        <label>Apellido Materno:*</label>
-                        <input class="input-text" type="text" required placeholder="Apellido Materno">
+                        <label for="Materno">Apellido Materno:*</label>
+                        <input class="input-text" type="text" required placeholder="Apellido Materno" id="txtMaterno">
                     </div>
 
                     <div class="campo">
-                        <label>CURP:*</label>
-                        <input class="input-text" type="text" required minlength="18" maxlength="18" placeholder="CURP">
+                        <label for="Curp">CURP:*</label>
+                        <input class="input-text" type="text" required minlength="18" maxlength="18" placeholder="CURP" id="txtCurp">
                     </div>
 
                     <div class="campo">
-                        <label>Edad:*</label>
-                        <input class="input-text" type="number" required min="1" placeholder="Edad">
+                        <label for="Edad">Edad:*</label>
+                        <input class="input-text" type="number" required min="1" placeholder="Edad" id="txtEdad">
                     </div>
 
                     <div class="campo">
-                        <label>Usuario:*</label>
-                        <input class="input-text" type="text" required placeholder="Nombre de usuario">
+                        <label for="Usuario">Usuario:*</label>
+                        <input class="input-text" type="text" required placeholder="Nombre de usuario" id="txtUsuario">
                     </div>
 
                     <div class="campo">
-                        <label>Contraseña:*</label>
-                        <input class="input-text" type="password"  required placeholder="Ingresa una contraseña">
+                        <label for="Contrasena">Contraseña:*</label>
+                        <input class="input-text" type="password"  required placeholder="Ingresa una contraseña" id="txtContrasena">
                         <p>Recuerda hacer tu contraseña lo más segura posible.</p>
                     </div>
 
@@ -77,8 +77,8 @@
                     </div>
 
                     <div class="correo">
-                        <label>Correo:*</label>
-                        <input class="input-text" type="email" required placeholder="Tu correo electrónico">
+                        <label for="Email">Correo:*</label>
+                        <input class="input-text" type="email" required placeholder="Tu correo electrónico" id="txtEmail">
                     </div>
 
                     <div class="correo">
@@ -100,21 +100,19 @@
                     </div>
 
                     <div class="campo">
-                        <label>Respuesta a la pregunta de seguridad:*</label>
-                        <input class="input-text" type="text" required placeholder="Registre su respuesta">
+                        <label for="Respuesta">Respuesta a la pregunta de seguridad:*</label>
+                        <input class="input-text" type="text" required placeholder="Registre su respuesta" id="txtRespuesta">
                     </div>
 
                     <div class="correo">
                         <div class="g-recaptcha" data-sitekey="6LdSZF8jAAAAAFUAN-hPHfETwbncqyRUgvO5TnGp"></div>
-                        <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>
-                        <h3>
-                            *Los campos marcados con un asterisco son obligatorios para el registro.
-                        </h3>
+                        <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Verificar</button>
+                        
                     </div>
                 </div> <!-- .contenedor-campos-->
 
                 <div class="alinear-derecha flex">
-                    <a class="boton" href="#">Iniciar sesión</a>
+                    <input type="submit" name="submit" id="submit" value="Regístrate">
                 </div>
             </fieldset>
         </form>

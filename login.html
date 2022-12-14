@@ -32,24 +32,44 @@
 
     <main class="contenedor">
         <section>
-            <form class="formulario login">
+            <form name="f1" action="iniciar.php" onsubmit="return validation()" method="POST" class="formulario login">
                 <fieldset>
                     <div class="pregunta">
                         <label>Ingresa tu usuario o correo:</label>
-                        <input class="input-text" type="email" required placeholder="ejemplo@ejemplo.com">
+                        <input class="input-text" type="text" required placeholder="ejemplo@ejemplo.com" id="user"/>
                     </div>
                     <div class="pregunta">
                         <label>Ingresa tu contraseña:</label>
-                        <input class="input-text" type="password" required placeholder="Contraseña">
+                        <input class="input-text" type="password" required placeholder="Contraseña" id="pass"/>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LdSZF8jAAAAAFUAN-hPHfETwbncqyRUgvO5TnGp"></div>
                     <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>Submit</button>
                     <div class="alinear-derecha flex">
-                        <a class="boton" href="/home.html">Iniciar sesión</a>
+                        <input type="submit" id="btn" value="Iniciar sesión">
                     </div>
                 </fieldset>
             </form>
         </section>
+        <script>
+            function validation(){
+                var id=document.f1.user.value;
+                var ps=document.f1.pass.value;
+
+                if(id.length=="" && ps.length=="") { 
+                    alert("No debe de haber campos vacíos, favor de llenarlos."); 
+                    return false;
+                }else{
+                    if(id.length==""){
+                        alert("El usuario está vacío.")
+                        return false;
+                    }
+                    if(ps.length==""){
+                        alert("La contraseña está vacía.")
+                        return false;
+                    }
+                }
+            }
+        </script>
     </main>
 
     <footer class="footer">

@@ -31,7 +31,7 @@ body{
     height: 2rem;
 }
 
-.boton{
+.boton, #btn{
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
